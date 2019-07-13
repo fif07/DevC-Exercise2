@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+            <title>Javascript Calculator</title>
+            <script type ="text/javascript">
+                function tambah (val1, val2){
+                    var hasil;
+                    hasil = parseInt(val1) + parseInt(val2);
+                    document.getElementById("hasil").innerHTML = hasil;
+                }
+                function kurang (val1, val2){
+                    var hasil;
+                    hasil = parseInt(val1) - parseInt(val2);
+                    document.getElementById("hasil").innerHTML = hasil;
+                }
+                function kali (val1, val2){
+                    var hasil;
+                    hasil = parseInt(val1) * parseInt(val2);
+                    document.getElementById("hasil").innerHTML = hasil;
+                }
+                function bagi (val1, val2){
+                    var hasil;
+                    hasil = parseInt(val1) / parseInt(val2);
+                    document.getElementById("hasil").innerHTML = hasil;
+                }
+            </script>
+    </head>
+<body>
+    <input type="number" id="bilangan1" />
+    <br><br>
+    <input type="number" id="bilangan2" />
+    <br><br>
+
+    <buttton class='btn btn-primary' onclick=tambah(bilangan1.value,bilangan2.value)>Tambah</buttton>
+    <buttton class='btn btn-primary' onclick=tambah(bilangan1.value,bilangan2.value)>Kurang</buttton>
+    <buttton class='btn btn-primary' onclick=tambah(bilangan1.value,bilangan2.value)>Kali</buttton>
+    <buttton class='btn btn-primary' onclick=tambah(bilangan1.value,bilangan2.value)>Bagi</buttton>
+    <br>
+    <h2 id="hasil">0</h2>
+</body>
+</html>
